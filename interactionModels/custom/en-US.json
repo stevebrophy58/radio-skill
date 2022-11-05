@@ -1,0 +1,127 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "the radio",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayRadioStationIntent",
+          "slots": [
+            {
+              "name": "station",
+              "type": "Station"
+            }
+          ],
+          "samples": [
+            "{station}",
+            "to play {station}",
+            "play {station}"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "B3C",
+              "name": {
+                "value": "BBC Three Counties Radio",
+                "synonyms": [
+                  "three counties radio"
+                ]
+              }
+            },
+            {
+              "id": "B4D",
+              "name": {
+                "value": "BBC Radio 4",
+                "synonyms": [
+                  "radio four"
+                ]
+              }
+            },
+            {
+              "id": "BR3",
+              "name": {
+                "value": "BBC Radio 3",
+                "synonyms": [
+                  "radio three"
+                ]
+              }
+            },
+            {
+              "id": "BR1",
+              "name": {
+                "value": "BBC Radio 1",
+                "synonyms": [
+                  "radio one"
+                ]
+              }
+            },
+            {
+              "id": "B6M",
+              "name": {
+                "value": "BBC 6 Music",
+                "synonyms": [
+                  "six music"
+                ]
+              }
+            },
+            {
+              "id": "BR2",
+              "name": {
+                "value": "BBC Radio 2",
+                "synonyms": [
+                  "radio two"
+                ]
+              }
+            },
+            {
+              "id": "M96",
+              "name": {
+                "value": "Mix 96",
+                "synonyms": [
+                  "mix ninety six"
+                ]
+              }
+            }
+          ],
+          "name": "Station"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "3"
+}

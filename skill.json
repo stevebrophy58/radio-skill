@@ -1,0 +1,90 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Play radio stations",
+          "examplePhrases": [
+            "Alexa, open the radio",
+            "play 6 Music",
+            "Alexa, play radio 2 by the radio"
+          ],
+          "keywords": [],
+          "name": "theRadio",
+          "description": "Play radio stations",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        },
+        "en-GB": {
+          "summary": "Play radio stations",
+          "examplePhrases": [
+            "Alexa, open the radio",
+            "play 6 Music",
+            "Alexa, play radio 2 by the radio"
+          ],
+          "keywords": [],
+          "name": "theRadio",
+          "description": "Play radio stations",
+          "smallIconUri": "file://assets/images/en-GB_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-GB_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "STREAMING_SERVICE",
+      "distributionMode": "PUBLIC",
+      "automaticClonedLocale": {
+        "locales": [
+          {
+            "source": "en-GB",
+            "targets": [
+              "en-US"
+            ]
+          }
+        ]
+      },
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:550868433906:function:64352cb6-4619-4dad-a516-7f0240996b9d:Release_0"
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:550868433906:function:64352cb6-4619-4dad-a516-7f0240996b9d:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:550868433906:function:64352cb6-4619-4dad-a516-7f0240996b9d:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:550868433906:function:64352cb6-4619-4dad-a516-7f0240996b9d:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {},
+        "en-GB": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
